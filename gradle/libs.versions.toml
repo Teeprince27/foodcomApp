@@ -1,37 +1,90 @@
 [versions]
 agp = "8.2.2"
-android-compileSdk = "34"
-android-minSdk = "24"
-android-targetSdk = "34"
-androidx-activityCompose = "1.9.2"
-androidx-appcompat = "1.7.0"
-androidx-constraintlayout = "2.1.4"
-androidx-core-ktx = "1.13.1"
-androidx-espresso-core = "3.6.1"
-androidx-lifecycle = "2.8.2"
-androidx-material = "1.12.0"
-androidx-test-junit = "1.2.1"
+androidx-activityCompose = "1.9.3"
+androidx-ui-tooling = "1.7.4"
+biometric = "1.2.0-alpha05"
 compose-plugin = "1.6.11"
-junit = "4.13.2"
+kamel = "0.9.5"
+koin = "3.5.6"
 kotlin = "2.0.20"
+ktor = "2.3.12"
+voyager = "1.0.0"
+accompanist-version = "0.33.2-alpha"
+accompanist-permissions = "0.34.0"
+androidx-datastore = "1.1.1"
+coil3-io = "3.0.0-alpha01"
+kotlinx-datetime = "0.6.0"
+androidx-lifecycle = "2.8.0-beta01"
+compose-navigation-ver = "2.8.0-alpha02"
+
+precompose-tlaster = "1.5.10"
+precompose-viewmodel-tlaster = "1.5.10"
+
+koin-compose = "1.2.0-Beta4"
+
+image-loader-qdsfdhvh = "1.6.8"
+mokoVersion = "0.16.1"
+uiAndroid = "1.7.4"
+insertKoin = "3.4.0"
+biometricKtx = "1.1.0"
+playServicesAuthApiPhone = "18.1.0"
+playServicesBasement = "18.4.0"
+media3CommonKtx = "1.4.1"
 
 [libraries]
-kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
-kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
-androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-junit" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-espresso-core" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
-androidx-material = { group = "com.google.android.material", name = "material", version.ref = "androidx-material" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
-androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
-androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+androidx-biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-ui-tooling" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-ui-tooling" }
+kamel = { module = "media.kamel:kamel-image", version.ref = "kamel" }
+
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose" }
+
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+
+compose-navigation = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "compose-navigation-ver" }
+
+system-ui-controller = {module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist-version"}
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist-permissions" }
+
+androidx-datastore-preferences-core = { module = "androidx.datastore:datastore-preferences-core", version.ref = "androidx-datastore" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "androidx-datastore" }
+
+androidx-lifecycle-viewmodel-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
+
+image-loader = { module = "io.github.qdsfdhvh:image-loader", version.ref = "image-loader-qdsfdhvh" }
+precompose = { module = "moe.tlaster:precompose", version.ref = "precompose-tlaster" }
+precompose-viewmodel = { module = "moe.tlaster:precompose-viewmodel", version.ref = "precompose-viewmodel-tlaster" }
+precompose-koin = { module = "moe.tlaster:precompose-koin", version.ref = "precompose-tlaster" }
+
+
+coil3 = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3-io" }
+coil3-network = { module = "io.coil-kt.coil3:coil-network", version.ref = "coil3-io" }
+coil3-video = { module = "io.coil-kt.coil3:coil-video", version.ref = "coil3-io" }
+coil3-svg = { module = "io.coil-kt.coil3:coil-svg", version.ref = "coil3-io" }
+coil3-gif = { module = "io.coil-kt.coil3:coil-gif", version.ref = "coil3-io" }
+coil3-core = { module = "io.coil-kt.coil3:coil-core", version.ref = "coil3-io" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
+
+koin-androidx-viewmodel = { group = "io.insert-koin", name = "koin-androidx-viewmodel", version.ref = "insertKoin" }
+androidx-biometric-ktx = { group = "androidx.biometric", name = "biometric-ktx", version.ref = "biometricKtx" }
+play-services-auth-api-phone = { group = "com.google.android.gms", name = "play-services-auth-api-phone", version.ref = "playServicesAuthApiPhone" }
+play-services-basement = { group = "com.google.android.gms", name = "play-services-basement", version.ref = "playServicesBasement" }
+androidx-media3-common-ktx = { group = "androidx.media3", name = "media3-common-ktx", version.ref = "media3CommonKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

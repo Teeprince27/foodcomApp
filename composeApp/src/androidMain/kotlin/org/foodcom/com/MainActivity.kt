@@ -7,17 +7,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        App.getApplicationContext()
+
         setContent {
-            App()
+            MainView(application)
         }
     }
 }
 
+
+
+
+
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    App()
+   val application = App.getApplicationContext()
+    MainView(application)
+
+
 }
